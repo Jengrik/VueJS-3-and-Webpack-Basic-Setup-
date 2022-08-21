@@ -6,7 +6,7 @@ import { createStore } from 'vuex'
 import App from './App.vue'
 
 //* Creates the application instance
-const VueApp = createApp(App).mount('#app');
+const VueApp = createApp(App).mount('#bodyVueContainer');
 
 //* Install the store instance as a plugin
 VueApp.use(store)
