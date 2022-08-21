@@ -1,9 +1,8 @@
-//* Import Necessary Methods from Vue and Vuex
-import { createApp } from 'vue'
+//* Import Necessary Methods from Vuex
 import { createStore } from 'vuex'
 
 //* Store Instance Definition
-const store = createStore({
+const VueStore = createStore({
   state () {
     return {
     //* State
@@ -25,3 +24,5 @@ const store = createStore({
     //    2. Actions can contain arbitrary asynchronous operations.
   },
 });
+
+export default VueStore;

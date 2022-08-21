@@ -1,12 +1,15 @@
-//* Import Necessary Methods from Vue and Vuex
+//* Imports Necessary Methods from Vue
 import { createApp } from 'vue'
-import { createStore } from 'vuex'
 
-//* Import the Root Component
+//* Imports the Root Component and Store
 import App from './App.vue'
+import Store from './AppStore';
 
 //* Creates the application instance
-const VueApp = createApp(App).mount('#bodyVueContainer');
+const VueApp = createApp(App);
 
-//* Install the store instance as a plugin
-VueApp.use(store)
+//* Installs the store instance as a plugin
+VueApp.use(Store);
+
+//* Mounts the application instance
+VueApp.mount('#bodyVueContainer');
