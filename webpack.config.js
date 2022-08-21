@@ -1,4 +1,5 @@
 const { VueLoaderPlugin } = require('vue-loader');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './Source/App/AppLoader.js',
@@ -43,5 +44,9 @@ module.exports = {
   },
   plugins: [
     new VueLoaderPlugin(),
+    new webpack.DefinePlugin({
+      __VUE_PROD_DEVTOOLS__: true,
+      __VUE_OPTIONS_API__: false,
+    }),
   ]
 }
