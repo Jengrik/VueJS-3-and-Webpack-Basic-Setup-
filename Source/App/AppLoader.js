@@ -6,7 +6,8 @@ import App from './App.vue'
 import Store from './AppStore';
 
 //* Creates the application instance
-const VueApp = createApp(App);
+const MountElement = document.querySelector("#bodyVueContainer");
+const VueApp = createApp(App, { ...MountElement.firstElementChild.dataset });
 
 //* Installs the store instance as a plugin
 VueApp.use(Store);
