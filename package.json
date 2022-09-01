@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "This project presents a basic template with the minimum configuration that VueJS 3 and WebPack should have in the client side.",
   "scripts": {
-    "build": "webpack --mode development",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
     "build:watch": "webpack --mode development --watch"
   },
   "repository": {
