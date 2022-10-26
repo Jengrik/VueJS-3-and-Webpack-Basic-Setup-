@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: './Source/App/AppLoader.js',
   output: {
-    path: __dirname + '/public/webpack',
+    path: __dirname + '/Public/Webpack',
     filename: 'bundle.js'
   },
   stats: {
