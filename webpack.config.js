@@ -1,10 +1,11 @@
 const { VueLoaderPlugin } = require('vue-loader');
-const webpack = require('webpack');
+const webpack = require('webpack')
+const path = require('path');
 
 module.exports = {
-  entry: './Source/App/AppLoader.js',
+  entry: path.resolve(__dirname, './Source/App/AppLoader.js'),
   output: {
-    path: __dirname + '/Public/Webpack',
+    path: path.resolve(__dirname, './Public/Webpack'),
     filename: 'bundle.js'
   },
   stats: {
