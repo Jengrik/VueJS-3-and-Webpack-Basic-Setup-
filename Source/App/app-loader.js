@@ -2,8 +2,8 @@
 import { createApp } from 'vue'
 
 //* Imports the Root Component and Store
-import App from './App.vue'
-import Store from './AppStore';
+import App from './app.vue'
+import Store from './app-store';
 
 //* Creates the application instance
 const MountElement = document.querySelector("#bodyVueContainer");
