@@ -1,6 +1,7 @@
 <template>
   <h1>Hello World!</h1>
   <h2>{{message}}</h2>
+  <div v-outer-html="{ color: 'blue', text: '2023' }"></div>
 </template>
 
 <script>
